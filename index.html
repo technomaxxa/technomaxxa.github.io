@@ -57,6 +57,24 @@
       opacity:0.06;
       filter: blur(18px);
     }
+    .socials img {
+    height: 40px; /* default */
+  }
+
+  @media (max-width: 768px) {
+    .socials img {
+      height: 32px; /* smaller badges on tablets */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .socials {
+      justify-content: center; /* center on mobile */
+    }
+    .socials img {
+      height: 28px; /* shrink further on phones */
+    }
+  }
     .shape.s1{right:4%;top:6%;width:260px;height:260px;background:linear-gradient(135deg,var(--accent),var(--accent-2));border-radius:34%;}
     .shape.s2{left:2%;bottom:6%;width:200px;height:200px;background:linear-gradient(135deg,var(--accent-2),var(--accent));border-radius:24%;}
 
@@ -357,14 +375,20 @@
       <div class="section-title"><h2>Contact</h2><div class="section-sub">Let's build something — open to collaboration and freelance work.</div></div>
 
       <div class="card contact-card">
-        <div style="text-align:right">
-          <div style="font-weight:700">Find me</div>
-          <div class="socials" style="margin-top:8px">
-            <a href="https://instagram.com/realmagix_" target="_blank" rel="noreferrer"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="instagram"></a>
-            <a href="https://technomaxxa.github.io" target="_blank" rel="noreferrer"><img src="https://img.shields.io/badge/Portfolio-FF7139?style=for-the-badge&logo=firefox&logoColor=white" alt="portfolio"></a>
-          </div>
-        </div>
-      </div>
+  <div style="text-align:right">
+    <div style="font-weight:700">Find me</div>
+    <div class="socials" style="margin-top:8px; display:flex; flex-wrap:wrap; gap:8px; justify-content:flex-end;">
+      <a href="https://instagram.com/realmagix_" target="_blank" rel="noreferrer">
+        <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" 
+             alt="instagram" style="max-width:100%; height:auto;">
+      </a>
+      <a href="https://technomaxxa.github.io" target="_blank" rel="noreferrer">
+        <img src="https://img.shields.io/badge/Portfolio-FF7139?style=for-the-badge&logo=firefox&logoColor=white" 
+             alt="portfolio" style="max-width:100%; height:auto;">
+      </a>
+    </div>
+  </div>
+</div>
 
     </section>
 
