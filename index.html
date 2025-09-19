@@ -38,6 +38,11 @@
       color:#e6eef8;
       padding:var(--page-padding);
     }
+    .grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap:18px;
+}
 
     /* Container */
     .container{
@@ -255,61 +260,61 @@
 
     <!-- Projects -->
     <section id="projects" class="reveal" data-reveal>
-      <div class="section-title">
-        <h2>Selected Projects</h2>
-        <div class="section-sub">Hardware, firmware, and system projects — full writeups in each repo.</div>
+  <div class="section-title">
+    <h2>Selected Projects</h2>
+    <div class="section-sub">Hardware, firmware, and system projects — full writeups in each repo.</div>
+  </div>
+
+  <div class="grid">
+
+    <article class="card">
+      <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnp0aWFueDhremJ6ZDV1aWdoeDNwcTlnZzRydHBzOWNzcDNhMG40ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/v4sOCVX9Dhsv6/giphy.gif" alt="project">
+      <h3>Smart Robotic Arm</h3>
+      <p style="color:var(--muted);font-size:14px">A compact robotic arm with inverse kinematics, ROS bridge and onboard microcontroller control for precision pick-and-place.</p>
+      <div class="tags" style="margin-top:10px">
+        <span class="tag">C++</span>
+        <span class="tag">Microcontroller</span>
+        <span class="tag">ROS</span>
       </div>
-
-      <div class="grid" style="grid-template-columns:repeat(3,1fr)">
-
-        <article class="card">
-          <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnp0aWFueDhremJ6ZDV1aWdoeDNwcTlnZzRydHBzOWNzcDNhMG40ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/v4sOCVX9Dhsv6/giphy.gif" alt="project">
-          <h3>Smart Robotic Arm</h3>
-          <p style="color:var(--muted);font-size:14px">A compact robotic arm with inverse kinematics, ROS bridge and onboard microcontroller control for precision pick-and-place.</p>
-          <div class="tags" style="margin-top:10px">
-            <span class="tag">C++</span>
-            <span class="tag">Microcontroller</span>
-            <span class="tag">ROS</span>
-          </div>
-          <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
-            <a class="btn secondary" href="#">Repo</a>
-            <a class="btn" href="#">Live Demo</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2xjeHFhN2hwaWJyMXdwdWg0aWhzaXl1cnp0cG9kaHNncmI3bjhuMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IRERBWOG2y8xfJGf9Q/giphy.gif" alt="project">
-          <h3>FSR Haptics Controller</h3>
-          <p style="color:var(--muted);font-size:14px">Firmware for tactile sensors (FSR) with haptic feedback engines, serial and HID modes for cross-platform compatibility.</p>
-          <div class="tags" style="margin-top:10px">
-            <span class="tag">Embedded C</span>
-            <span class="tag">HID</span>
-            <span class="tag">Pico/ESP32</span>
-          </div>
-          <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
-            <a class="btn secondary" href="#">Repo</a>
-            <a class="btn" href="#">Docs</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaGU3bzV4d2dqZzY4c3J6cTJmMWpweHY2NmUydHQ4emhydWJobmpzOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SRkjkPcYjyneR2aVpR/giphy.gif" alt="project">
-          <h3>UDP Tracking System</h3>
-          <p style="color:var(--muted);font-size:14px">Video-based pose tracking using lightweight YOLOv8 models and an efficient UDP command channel for servo actuation.</p>
-          <div class="tags" style="margin-top:10px">
-            <span class="tag">Python</span>
-            <span class="tag">YOLOv8</span>
-            <span class="tag">ESP8266</span>
-          </div>
-          <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
-            <a class="btn secondary" href="#">Repo</a>
-            <a class="btn" href="#">Article</a>
-          </div>
-        </article>
-
+      <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
+        <a class="btn secondary" href="#">Repo</a>
+        <a class="btn" href="#">Live Demo</a>
       </div>
+    </article>
 
-    </section>
+    <article class="card">
+      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2xjeHFhN2hwaWJyMXdwdWg0aWhzaXl1cnp0cG9kaHNncmI3bjhuMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IRERBWOG2y8xfJGf9Q/giphy.gif" alt="project">
+      <h3>FSR Haptics Controller</h3>
+      <p style="color:var(--muted);font-size:14px">Firmware for tactile sensors (FSR) with haptic feedback engines, serial and HID modes for cross-platform compatibility.</p>
+      <div class="tags" style="margin-top:10px">
+        <span class="tag">Embedded C</span>
+        <span class="tag">HID</span>
+        <span class="tag">Pico/ESP32</span>
+      </div>
+      <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
+        <a class="btn secondary" href="#">Repo</a>
+        <a class="btn" href="#">Docs</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaGU3bzV4d2dqZzY4c3J6cTJmMWpweHY2NmUydHQ4emhydWJobmpzOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SRkjkPcYjyneR2aVpR/giphy.gif" alt="project">
+      <h3>UDP Tracking System</h3>
+      <p style="color:var(--muted);font-size:14px">Video-based pose tracking using lightweight YOLOv8 models and an efficient UDP command channel for servo actuation.</p>
+      <div class="tags" style="margin-top:10px">
+        <span class="tag">Python</span>
+        <span class="tag">YOLOv8</span>
+        <span class="tag">ESP8266</span>
+      </div>
+      <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
+        <a class="btn secondary" href="#">Repo</a>
+        <a class="btn" href="#">Article</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
 
     <!-- Skills -->
     <section id="skills" class="reveal" data-reveal>
